@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: white; /* Color de texto por defecto */
+    font-family: 'Arial', sans-serif; /* Fuente más legible */
+}
+
+h1 {
+    text-align: center;
+    color: pink;
+    font-size: 35px;
+    margin-bottom: 20px; /* Espacio entre título y contenido */
+}
+
+.contenido {
+    background-color: aqua;
+    width: 100%;
+    height: 150px;
+    display: flex; /* Para centrar el texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+h2 {
+    text-align: center;
+    color: black; /* Color de texto del subtítulo */
+    font-size: 28px; /* Tamaño del subtítulo */
+    margin: 0; /* Eliminar márgenes */
+}

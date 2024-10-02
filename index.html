@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 id="title">Portada de este Blog</h1>
+        <div class="contenido">
+            <h2 id="subtitle">Todo correcto</h2>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Animaciones
+        anime({
+            targets: '#title',
+            translateY: [-50, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            easing: 'easeOutBack'
+        });
+
+        anime({
+            targets: '#subtitle',
+            translateY: [-50, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            delay: 500,
+            easing: 'easeOutBack'
+        });
+
+        anime({
+            targets: '.contenido',
+            translateX: [-100, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            delay: 1000,
+            easing: 'easeOutBack'
+        });
+
+        anime({
+            targets: '#title',
+            scale: [0.8, 1],
+            duration: 700,
+            delay: 1500,
+            easing: 'easeOutElastic(1, .5)'
+        });
+    </script>
+</body>
+</html>
